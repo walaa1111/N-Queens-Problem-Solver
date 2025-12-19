@@ -34,5 +34,6 @@ The following parameters were used to control the evolutionary process in the Ge
 
 * **Population Size:** `20` 
 * **Generations:** `50`
-* **Crossover Rate (Pc):** `0.8` i
+* **Crossover Rate (Pc):** `0.8` 
 * **Mutation Rate (Pm):** `0.05`
+
