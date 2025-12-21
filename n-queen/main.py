@@ -2,7 +2,6 @@ from src.problems.nqueens import NQueens
 from src.algorithms.hill_climbing import HillClimbing
 from src.algorithms.dfs_backstracking import DFSBacktracking
 from src.algorithms.bfs import BFS
-from src.algorithms.genetic_algorithm import GeneticAlgorithm
 import matplotlib.pyplot as plt
 import numpy as np
 import os
@@ -65,10 +64,6 @@ if __name__ == "__main__":
     bfs = BFS(problem)
     result_bfs = bfs.solve()
 
-    ga = GeneticAlgorithm(n, N=20,G=50, Pc=0.8, Pm=0.05)
-    result_ga = ga.solve()
-    
-
     print("Hill Climbing Result:")
     print("Solution:", result["solution"])
     print("Conflicts:", result["conflicts"])
@@ -100,15 +95,5 @@ if __name__ == "__main__":
     "BFS – First Solution"
     )
 
-    print("\nGenetic Result:")
-    print("Best Solution:", result_ga["solution"])
-    print("Fitness:", result_ga["fitness"])
-    print("Generations:", result_ga["generations"])
-    print("Execution Time:", result_ga["execution_time"])
-    
-    save_board(
-    result_ga["solution"],
-    f"genetic_algorithm_n{n}.png",
-    "Genetic Algorithm Solution"
-    )
+
   
